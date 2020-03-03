@@ -8,7 +8,7 @@ A) Plot the Phase Velocity and Group Velocity as functions of Wavelength coverin
 10**2 meters. Use log scales on both axes. Plot Phase Velocity vs Wavelength and plot Group Velocity vs Wavelength
 individually.
 
-B) Find the wavelength at which the Phase and Group velocities are equal. Plot both Phase and Group Velocities vs 
+B) Find the wavelength at which the Phase and Group velocities are equal. Plot both Phase and Group Velocities vs
 Wavelength on the same figure and find their intersection point.
 
 Function:
@@ -102,4 +102,6 @@ plt.yscale('log')
 plt.plot(wavelength_list_a, phase_velocity_a)
 plt.plot(wavelength_list_a, group_velocity_a)
 plt.figlegend(['Phase Velocity', 'Group Velocity'])
+plt.xlabel('wavelength (m)')
+plt.ylabel('phase and group velocities')
 plt.show()
